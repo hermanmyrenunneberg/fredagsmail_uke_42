@@ -1,0 +1,27 @@
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 300px;
+    margin: 50px auto;
+}
+
+.card {
+    width: 60px;
+    height: 60px;
+    background-color: #ddd;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px; /* Liten padding for å unngå at tekst kolliderer med kortets grenser */
+}
+
+.card.flipped {
+    background-color: white;
+}
+
+.bold-text {
+    font-weight: bold;
+}
